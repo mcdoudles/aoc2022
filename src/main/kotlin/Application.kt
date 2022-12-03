@@ -1,5 +1,6 @@
 import days.Day
 import days.One
+import days.Three
 import days.Two
 import util.FileReader
 import java.io.FileNotFoundException
@@ -28,7 +29,7 @@ fun getResultsForADay(day: Int, taskOne: () -> String, taskTwo: () -> String) {
 }
 
 fun createDayMap(lines: List<String>): Map<Int, Day> {
-    return mapOf(1 to One(lines), 2 to Two(lines))
+    return mapOf(1 to One(lines), 2 to Two(lines), 3 to Three(lines))
 }
 
 fun getDay(dayNumber: Int): Day? {
