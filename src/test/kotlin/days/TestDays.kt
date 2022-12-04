@@ -28,4 +28,11 @@ internal class TestDays {
         val wrongThree = Three(FileReader.readFile("2.txt").readLines())
         assertThrows<Exception> { wrongThree.one() }
     }
+
+    @Test
+    fun testDayFour() {
+        val four = Four(FileReader.readFile("4.txt").readLines())
+        assertEquals("464", four.one())
+        assertEquals("770", four.two())
+    }
 }
