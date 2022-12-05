@@ -26,7 +26,7 @@ fun getResultsForADay(day: Int, taskOne: () -> String, taskTwo: () -> String) {
 }
 
 fun createDayMap(lines: List<String>): Map<Int, Day> {
-    return mapOf(1 to One(lines), 2 to Two(lines), 3 to Three(lines), 4 to Four(lines))
+    return mapOf(1 to One(lines), 2 to Two(lines), 3 to Three(lines), 4 to Four(lines), 5 to Five(lines))
 }
 
 fun getDay(dayNumber: Int): Day? {

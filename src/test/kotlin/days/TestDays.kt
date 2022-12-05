@@ -35,4 +35,11 @@ internal class TestDays {
         assertEquals("464", four.one())
         assertEquals("770", four.two())
     }
+
+    @Test
+    fun testDayFive() {
+        val five = Five(FileReader.readFile("5.txt").readLines())
+        assertEquals("LBLVVTVLP", five.one())
+        assertEquals("TPFFBDRJD", five.two())
+    }
 }
