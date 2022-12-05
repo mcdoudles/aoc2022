@@ -1,7 +1,7 @@
 package days
 
-class Three(lines: List<String>) : Day(lines) {
-    override fun one(): String {
+class Day03(lines: List<String>) : Day(lines) {
+    override fun task1(): String {
         var retVal = 0
         lines.map {
             if (it.length % 2 == 1) {
@@ -21,7 +21,7 @@ class Three(lines: List<String>) : Day(lines) {
     }
 
 
-    override fun two(): String {
+    override fun task2(): String {
         var i = 0
         var tripletMap = mapOf<Int, Array<String>>()
         var retVal = 0

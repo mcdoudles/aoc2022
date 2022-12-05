@@ -1,7 +1,7 @@
 package days
 
-class Four(lines: List<String>) : Day(lines) {
-    override fun one(): String {
+class Day04(lines: List<String>) : Day(lines) {
+    override fun task1(): String {
         var result = 0
         for (values in mapLinesToValues()) {
             // first range is within the second range
@@ -19,7 +19,7 @@ class Four(lines: List<String>) : Day(lines) {
         return result.toString()
     }
 
-    override fun two(): String {
+    override fun task2(): String {
         var result = 0
         for (values in mapLinesToValues()) {
 

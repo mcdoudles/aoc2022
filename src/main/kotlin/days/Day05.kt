@@ -1,7 +1,7 @@
 package days
 
-class Five(lines: List<String>) : Day(lines) {
-    override fun one(): String {
+class Day05(lines: List<String>) : Day(lines) {
+    override fun task1(): String {
         val input = splitInput()
         val listOfStacks = createListOfStacks(input["crates"])
         val instructions = sanitizeInstructions(input["instructions"])
@@ -18,7 +18,7 @@ class Five(lines: List<String>) : Day(lines) {
         return getResult(listOfStacks)
     }
 
-    override fun two(): String {
+    override fun task2(): String {
         val input = splitInput()
         val listOfStacks = createListOfStacks(input["crates"])
         val instructions = sanitizeInstructions(input["instructions"])

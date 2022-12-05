@@ -8,38 +8,38 @@ import kotlin.test.assertEquals
 internal class TestDays {
     @Test
     fun testDayOne() {
-        val one = One(FileReader.readFile("1.txt").readLines())
-        assertEquals("71924", one.one())
-        assertEquals("210406", one.two())
+        val day01 = Day01(FileReader.readFile("1.txt").readLines())
+        assertEquals("71924", day01.task1())
+        assertEquals("210406", day01.task2())
     }
 
     @Test
     fun testDayTwo() {
-        val two = Two(FileReader.readFile("2.txt").readLines())
-        assertEquals("14069", two.one())
-        assertEquals("12411", two.two())
+        val two = Day02(FileReader.readFile("2.txt").readLines())
+        assertEquals("14069", two.task1())
+        assertEquals("12411", two.task2())
     }
 
     @Test
     fun testDayThree() {
-        val three = Three(FileReader.readFile("3.txt").readLines())
-        assertEquals("7817", three.one())
-        assertEquals("2444", three.two())
-        val wrongThree = Three(FileReader.readFile("2.txt").readLines())
-        assertThrows<Exception> { wrongThree.one() }
+        val three = Day03(FileReader.readFile("3.txt").readLines())
+        assertEquals("7817", three.task1())
+        assertEquals("2444", three.task2())
+        val wrongThree = Day03(FileReader.readFile("2.txt").readLines())
+        assertThrows<Exception> { wrongThree.task1() }
     }
 
     @Test
     fun testDayFour() {
-        val four = Four(FileReader.readFile("4.txt").readLines())
-        assertEquals("464", four.one())
-        assertEquals("770", four.two())
+        val day04 = Day04(FileReader.readFile("4.txt").readLines())
+        assertEquals("464", day04.task1())
+        assertEquals("770", day04.task2())
     }
 
     @Test
     fun testDayFive() {
-        val five = Five(FileReader.readFile("5.txt").readLines())
-        assertEquals("LBLVVTVLP", five.one())
-        assertEquals("TPFFBDRJD", five.two())
+        val day05 = Day05(FileReader.readFile("5.txt").readLines())
+        assertEquals("LBLVVTVLP", day05.task1())
+        assertEquals("TPFFBDRJD", day05.task2())
     }
 }

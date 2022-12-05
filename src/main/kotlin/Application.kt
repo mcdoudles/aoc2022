@@ -9,7 +9,7 @@ fun main() {
     while (dayNumber < 25) {
         val day = getDay(dayNumber)
         if (day != null) {
-            getResultsForADay(dayNumber, day::one, day::two)
+            getResultsForADay(dayNumber, day::task1, day::task2)
         }
         dayNumber++
     }
@@ -26,7 +26,7 @@ fun getResultsForADay(day: Int, taskOne: () -> String, taskTwo: () -> String) {
 }
 
 fun createDayMap(lines: List<String>): Map<Int, Day> {
-    return mapOf(1 to One(lines), 2 to Two(lines), 3 to Three(lines), 4 to Four(lines), 5 to Five(lines))
+    return mapOf(1 to Day01(lines), 2 to Day02(lines), 3 to Day03(lines), 4 to Day04(lines), 5 to Day05(lines))
 }
 
 fun getDay(dayNumber: Int): Day? {

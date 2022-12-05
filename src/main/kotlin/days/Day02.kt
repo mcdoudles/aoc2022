@@ -1,7 +1,7 @@
 package days
 
-class Two(lines: List<String>) : Day(lines) {
-    override fun one(): String {
+class Day02(lines: List<String>) : Day(lines) {
+    override fun task1(): String {
         var result = 0L
         val matchUps = mapOf(
             // ROCK = 1, PAPER = 2, SCI = 3
@@ -21,7 +21,7 @@ class Two(lines: List<String>) : Day(lines) {
         return result.toString()
     }
 
-    override fun two(): String {
+    override fun task2(): String {
 
         val matchUps = mapOf(
             // ROCK = 1, PAPER = 2, SCI = 3
