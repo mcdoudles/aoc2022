@@ -1,5 +1,8 @@
 package days
 
+/**
+ * @see <a href="https://adventofcode.com/2022/day/5">Advent of Code Day 5</a>
+ */
 class Day05(lines: List<String>) : Day(lines) {
     override fun task1(): String {
         val input = splitInput()

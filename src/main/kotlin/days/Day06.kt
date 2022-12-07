@@ -1,5 +1,8 @@
 package days
 
+/**
+ * @see <a href="https://adventofcode.com/2022/day/6">Advent of Code Day 6</a>
+ */
 class Day06(lines: List<String>) : Day(lines) {
     override fun task1(): String {
         return findUniqueStringWithLength(4).toString()

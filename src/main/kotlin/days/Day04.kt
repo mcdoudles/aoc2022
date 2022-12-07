@@ -1,5 +1,8 @@
 package days
 
+/**
+ * @see <a href="https://adventofcode.com/2022/day/4">Advent of Code Day 4</a>
+ */
 class Day04(lines: List<String>) : Day(lines) {
     override fun task1(): String {
         var result = 0
