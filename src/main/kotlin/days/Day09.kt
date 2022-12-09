@@ -56,8 +56,7 @@ class Day09(lines: List<String>) : Day(lines) {
     }
 
     private fun moveTail(currentPosition: Position, target: Position): Position {
-        // Don't move up to target if on same position or x & y are only 1 apart
-        if ((currentPosition == target || abs(target.x - currentPosition.x) < 2) && abs(target.y - currentPosition.y) < 2) {
+        if (abs(target.x - currentPosition.x) < 2 && abs(target.y - currentPosition.y) < 2) {
             return currentPosition
         }
         val x = if (target.x == currentPosition.x) {
