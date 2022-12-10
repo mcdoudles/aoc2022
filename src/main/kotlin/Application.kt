@@ -35,7 +35,8 @@ fun createDayMap(lines: List<String>): Map<Int, Day> {
         6 to Day06(lines),
         7 to Day07(lines),
         8 to Day08(lines),
-        9 to Day09(lines)
+        9 to Day09(lines),
+        10 to Day10(lines)
     )
 }
 
