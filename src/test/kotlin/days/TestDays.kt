@@ -84,4 +84,13 @@ internal class TestDays {
                     "########  ##    ##    ####    ##        ######      ####    ##        ########  \n", day10.task2()
         )
     }
+
+    @Test
+    fun testDay11() {
+        val day11 = Day11(FileReader.readFile("11.txt").readLines())
+        assertEquals("88208", day11.task1())
+        assertEquals(
+            "21115867968", day11.task2()
+        )
+    }
 }
